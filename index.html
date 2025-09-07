@@ -4,34 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Golden Shower Tree</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { text-align: center; padding: 20px; background: #fff; border-bottom: 2px solid #eee; }
-    header img { height: 80px; margin: 0 15px; vertical-align: middle; }
-    h1 { color: #cc9900; margin-top: 10px; }
-    section { background: white; padding: 20px; margin: 20px auto; max-width: 900px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    h2 { color: #444; margin-top: 0; }
-    ul { line-height: 1.8; }
-    footer { text-align: center; padding: 20px; background: #fff; border-top: 2px solid #eee; margin-top: 30px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fff8e1, #f9f9f9);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+      background: white;
+      border-bottom: 3px solid #eee;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 80px;
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+    h1 {
+      color: #cc9900;
+      margin-top: 10px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    h2 {
+      color: #444;
+      margin-top: 0;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: white;
+      border-top: 3px solid #eee;
+      margin-top: 40px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.05);
+    }
+
+    /* Contact icons */
+    .contact-icons {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #f1f1f1;
+      color: #333;
+      font-size: 24px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-icons a:hover {
+      transform: scale(1.1);
+      background: #fff;
+    }
+    .contact-icons .fa-envelope { color: #0072c6; }
+    .contact-icons .fa-instagram { color: #e1306c; }
+    .contact-labels {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="college_logo.jpeg" alt="College Logo" />
-    
     <h2>SHRI GURU GOBIND SINGHJI INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2>
-    <p>Vishnupuri, Nanded‑431606 (Government Aided Autonomous Institute)</p>
+    <p>Vishnupuri, Nanded-431606 (Government Aided Autonomous Institute)</p>
     <img src="club_logo.jpeg" alt="Club Logo" />
     <h3>Department of Electronics and Telecommunication Engineering</h3>
     <h3>Team Elite</h3>
   </header>
 
   <section>
-    <h1>GOLDEN SHOWER TREE</h1>
+    <h1>🌳 GOLDEN SHOWER TREE 🌼</h1>
     <div style="text-align: center; margin: 15px 0;">
-    <img src="golden.jpeg" alt="Golden Shower"
-         style="max-width:80%; height:auto; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);" />
-  </div>
+      <img src="golden.jpeg" alt="Golden Shower"
+           style="max-width:80%; height:auto; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);" />
+    </div>
     <h2><em>Cassia fistula</em></h2>
     <p>
       The Golden Shower Tree is a beautiful ornamental tree known for its long hanging clusters of bright yellow flowers. 
@@ -46,7 +127,7 @@
       <li><strong>Scientific Name:</strong> <em>Cassia fistula</em></li>
       <li><strong>Family:</strong> Fabaceae</li>
       <li><strong>Native Region:</strong> Indian subcontinent & Southeast Asia</li>
-      <li><strong>Height:</strong> 10–20 m (cultivated commonly 5–10 m)</li>
+      <li><strong>Height:</strong> 10–20 m (commonly 5–10 m in cultivation)</li>
       <li><strong>Notable Feature:</strong> Hanging golden-yellow flower clusters</li>
       <li><strong>Lifespan:</strong> ~40–60 years</li>
     </ul>
@@ -71,7 +152,18 @@
   </section>
 
   <footer>
-    <p>Contact: <a href="mailto:eliteextc@sggs.ac.in">eliteextc@sggs.ac.in</a></p>
+    <h3>Connect with Us</h3>
+    <div class="contact-icons">
+      <a href="mailto:eliteextc@sggs.ac.in" target="_blank" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://instagram.com/team_elite_sggs" target="_blank" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="contact-labels">
+      <p>Email: eliteextc@sggs.ac.in | Instagram: @team_elite_sggs</p>
+    </div>
   </footer>
 </body>
 </html>
